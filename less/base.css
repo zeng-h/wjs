@@ -12,10 +12,13 @@
   /* 防止文字的锯齿样式 */
   -webkit-font-smoothing: antialiased;
 }
+/* 改变根元素也是属于公共代码放到base.less里面方便别的文件使用 */
+html {
+  font-size: 26.6667vw;
+}
 /* 给body设置字体默认样式 */
 body {
-  background: #fff;
-  font-size: 14px;
+  font-size: 0.14rem;
   font-family: -apple-system, Helvetica, sans-serif;
   line-height: 1.5;
 }
@@ -37,4 +40,16 @@ img {
 i {
   /* 去掉斜体 */
   font-style: normal;
+}
+.bt {
+  border-top: 1px solid #ccc;
+}
+.bb {
+  border-bottom: 1px solid #ccc;
+}
+.bl {
+  border-left: 1px solid #ccc;
+}
+.br {
+  border-right: 1px solid #ccc;
 }
